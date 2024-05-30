@@ -1,9 +1,9 @@
-name: My Example Helix App
-description: A selection of assistants to help me do stuff.
+name: HTTP Cats for every HTTP code
+description: Generate me a cat image for my HTTP code
 assistants:
-- name: Bitcoin price API
+- name: HTTP Cat API
   apis:
-    - name: Coindesk API
-      description: Gets the current Bitcoin price in USD, GPB and EUR.
-      url: https://api.coindesk.com/v1
-      schema: ./openapi/coindesk.yaml
+    - name: HTTP Cat API
+      description: Gets a cat picture for each HTTP Code
+      url: https://http.cat
+      schema: ./openapi/httpcat.yaml

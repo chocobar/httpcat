@@ -1,0 +1,908 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "httpcat",
+    "description": "- Website: https://http.cat\n- GitHub: https://github.com/httpcats/http.cat\n\nThis version does not need any server side code. The API behavior is provided by a Nginx server config. The interface is built with React and pre-rendered with react-snap.\n\n- [List of Http status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "https://http.cat"
+    }
+  ],
+  "paths": {
+    "/100": {
+      "get": {
+        "tags": [
+          "1xx"
+        ],
+        "summary": "100: Continue",
+        "description": "100: Continue",
+        "operationId": "100Continue",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/101": {
+      "get": {
+        "tags": [
+          "1xx"
+        ],
+        "summary": "101: Switching Protocols",
+        "description": "101: Switching Protocols",
+        "operationId": "101SwitchingProtocols",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/200": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "200: Ok",
+        "description": "200: Ok",
+        "operationId": "200Ok",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/201": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "201: Created",
+        "description": "201: Created",
+        "operationId": "201Created",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/202": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "202: Accepted",
+        "description": "202: Accepted",
+        "operationId": "202Accepted",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/204": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "204: No content",
+        "description": "204: No content",
+        "operationId": "204NoContent",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/206": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "206: Partial Content",
+        "description": "206: Partial Content",
+        "operationId": "206PartialContent",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/207": {
+      "get": {
+        "tags": [
+          "2xx"
+        ],
+        "summary": "207: Multi-Status",
+        "description": "207: Multi-Status",
+        "operationId": "207MultiStatus",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/300": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "300: Multiple Choices",
+        "description": "300: Multiple Choices",
+        "operationId": "300MultipleChoices",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/301": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "301: Moved Permanently",
+        "description": "301: Moved Permanently",
+        "operationId": "301MovedPermanently",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/302": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "302: Found",
+        "description": "302: Found",
+        "operationId": "302Found",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/303": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "303: See other",
+        "description": "303: See other",
+        "operationId": "303SeeOther",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/304": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "304: Not Modified",
+        "description": "304: Not Modified",
+        "operationId": "304NotModified",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/305": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "305: Use Proxy",
+        "description": "305: Use Proxy",
+        "operationId": "305UseProxy",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/307": {
+      "get": {
+        "tags": [
+          "3xx"
+        ],
+        "summary": "307: Temporary Redirect",
+        "description": "307: Temporary Redirect",
+        "operationId": "307TemporaryRedirect",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/400": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "400: Bad Request",
+        "description": "400: Bad Request",
+        "operationId": "400BadRequest",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/401": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "401: Unauthorized",
+        "description": "401: Unauthorized",
+        "operationId": "401Unauthorized",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/402": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "402: Payment Required",
+        "description": "402: Payment Required",
+        "operationId": "402PaymentRequired",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/403": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "403: Forbidden",
+        "description": "403: Forbidden",
+        "operationId": "403Forbidden",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/404": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "404: Not Found",
+        "description": "404: Not Found",
+        "operationId": "404NotFound",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/405": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "405: Method Not allowed",
+        "description": "405: Method Not allowed",
+        "operationId": "405MethodNotAllowed",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/406": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "406: Not acceptable",
+        "description": "406: Not acceptable",
+        "operationId": "406NotAcceptable",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/408": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "408: Request Timeout",
+        "description": "408: Request Timeout",
+        "operationId": "408RequestTimeout",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/409": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "409: Conflict",
+        "description": "409: Conflict",
+        "operationId": "409Conflict",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/410": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "410: Gone",
+        "description": "410: Gone",
+        "operationId": "410Gone",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/411": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "411: Length Required",
+        "description": "411: Length Required",
+        "operationId": "411LengthRequired",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/412": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "412: Precondition Failed",
+        "description": "412: Precondition Failed",
+        "operationId": "412PreconditionFailed",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/413": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "413: Payload Too Large",
+        "description": "413: Payload Too Large",
+        "operationId": "413PayloadTooLarge",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/414": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "414: Request URL Too Long",
+        "description": "414: Request URL Too Long",
+        "operationId": "414RequestUrlTooLong",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/415": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "415: Unsupported Media Type",
+        "description": "415: Unsupported Media Type",
+        "operationId": "415UnsupportedMediaType",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/416": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "416: Request range not satisfiable",
+        "description": "416: Request range not satisfiable",
+        "operationId": "416RequestRangeNotSatisfiable",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/417": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "417: Expectation Failed",
+        "description": "417: Expectation Failed",
+        "operationId": "417ExpectationFailed",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/418": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "418: I'm a TeaPot",
+        "description": "418: I'm a TeaPot",
+        "operationId": "418IMATeapot",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/420": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "420: Enhance your Calm",
+        "description": "420: Enhance your Calm",
+        "operationId": "420EnhanceYourCalm",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/421": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "421: Misdirected Request",
+        "description": "421: Misdirected Request",
+        "operationId": "421MisdirectedRequest",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/422": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "422: Unprocessable Entity",
+        "description": "422: Unprocessable Entity",
+        "operationId": "422UnprocessableEntity",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/423": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "423: Locked",
+        "description": "423: Locked",
+        "operationId": "423Locked",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/424": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "424: Failed Dependency",
+        "description": "424: Failed Dependency",
+        "operationId": "424FailedDependency",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/425": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "425: Unordered collection",
+        "description": "425: Unordered collection",
+        "operationId": "425UnorderedCollection",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/426": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "426: Upgrade Request",
+        "description": "426: Upgrade Request",
+        "operationId": "426UpgradeRequest",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/429": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "429: Too many requests",
+        "description": "429: Too many requests",
+        "operationId": "429TooManyRequests",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/431": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "431: Request Header Fields Too large",
+        "description": "431: Request Header Fields Too large",
+        "operationId": "431RequestHeaderFieldsTooLarge",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/444": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "444: No Response",
+        "description": "444: No Response",
+        "operationId": "444NoResponse",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/450": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "450: Blocked by Windows Parental Control",
+        "description": "450: Blocked by Windows Parental Control",
+        "operationId": "450BlockedByWindowsParentalControl",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/451": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "451: Unavailable for Legal Reasons",
+        "description": "451: Unavailable for Legal Reasons",
+        "operationId": "451UnavailableForLegalReasons",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/499": {
+      "get": {
+        "tags": [
+          "4xx"
+        ],
+        "summary": "499: Client Closed Request",
+        "description": "499: Client Closed Request",
+        "operationId": "499ClientClosedRequest",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/500": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "500: Internal Server Error",
+        "description": "500: Internal Server Error",
+        "operationId": "500InternalServerError",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/501": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "501: Not Implemented",
+        "description": "501: Not Implemented",
+        "operationId": "501NotImplemented",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/502": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "502: Bad Gateway",
+        "description": "502: Bad Gateway",
+        "operationId": "502BadGateway",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/503": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "503: Service Unavailable",
+        "description": "503: Service Unavailable",
+        "operationId": "503ServiceUnavailable",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/504": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "504: Gateway Timeout",
+        "description": "504: Gateway Timeout",
+        "operationId": "504GatewayTimeout",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/506": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "506: Variant Also Negotiates",
+        "description": "506: Variant Also Negotiates",
+        "operationId": "506VariantAlsoNegotiates",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/507": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "507: Insufficient Storage",
+        "description": "507: Insufficient Storage",
+        "operationId": "507InsufficientStorage",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/508": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "508: Loop Detected",
+        "description": "508: Loop Detected",
+        "operationId": "508LoopDetected",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/509": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "509: Bandwidth Limit Exceeded",
+        "description": "509: Bandwidth Limit Exceeded",
+        "operationId": "509BandwidthLimitExceeded",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/510": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "510: Not Extended",
+        "description": "510: Not Extended",
+        "operationId": "510NotExtended",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/511": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "511: Network Authentication Required",
+        "description": "511: Network Authentication Required",
+        "operationId": "511NetworkAuthenticationRequired",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/599": {
+      "get": {
+        "tags": [
+          "5xx"
+        ],
+        "summary": "599: Network Connect Timeout Error",
+        "description": "599: Network Connect Timeout Error",
+        "operationId": "599NetworkConnectTimeoutError",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "1xx",
+      "description": "### Informational response\nThe request was received, continuing process."
+    },
+    {
+      "name": "2xx",
+      "description": "### Successful \nThe request was successfully received, understood, and accepted."
+    },
+    {
+      "name": "3xx",
+      "description": "### Redirection\nFurther action needs to be taken in order to complete the request."
+    },
+    {
+      "name": "4xx",
+      "description": "### Client error\nThe request contains bad syntax or cannot be fulfilled."
+    },
+    {
+      "name": "5xx",
+      "description": "### server error\nThe server failed to fulfill an apparently valid request."
+    }
+  ]
+}
